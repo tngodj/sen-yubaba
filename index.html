@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Showcase</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+        <!--상단 메뉴 버튼-->
+    <div class="top-right-menu">
+            <button id="main-button" onclick="toggleDropdown()">메뉴</button>
+            <div id="dropdown-menu">
+              <button class="submenu-button" onclick="clickSubButton(0)">홈</button>
+              <button class="submenu-button" onclick="clickSubButton(1)">영화 포스터</button>
+              <button class="submenu-button" onclick="clickSubButton(2)">이상형 월드컵</button>
+              <button class="submenu-button" onclick="clickSubButton(3)">OST 맞추기</button>
+              <button class="submenu-button" onclick="clickSubButton(4)">캐릭터 맞추기</button>
+            </div>
+    </div>
+
+    <div class="character-header">
+        <!-- 캐릭터 이미지 -->
+         <div class="character-content">
+            <div class="character-image-container">
+                <img src="유바바.jpg" alt="Character Image" class="character-image">
+            </div>
+            <!-- 타이틀 -->
+            <div class="character-title">
+                <h1>유바바</h1>
+                <h2>온천탕 사장</h2>
+            </div>
+         </div>
+    </div>
+
+    <!-- 구분선 -->
+    <div class="divider"></div>
+
+    <div class="container">
+        <div class="mid-character-image">
+          <!-- 캐릭터 이미지 -->
+          <img src="유바바.png" alt="캐릭터 이미지">
+        </div>
+        
+        <!-- 인용구 섹션 -->
+        <div class="quote-section">
+            <p>“내가 널 왜 고용해야 하지? 굼뜬 응석바지에, 머리나쁜 울보 한테 맡길 일따위는 애초부터 없어”</p>
+            <div class="quote-author"><p>-유바바-</p></div>
+        </div>
+        <div class="description">
+          <!-- 설명 -->
+          <p>
+            온천을 운영중인 마녀이자 하쿠의 스승이다. 욕심이 많지만 자신의 아들 보우에겐 한 없이 약한 모습을 보여준다.
+          </p>
+        </div>
+        <button class="more-info" onclick="showMoreContent()"><p>캐릭터 더 알기 ➜</p></button>
+      </div>
+      <div class="container">
+
+        <!-- 숨겨진 콘텐츠 -->
+        <div id="additional-content" style="display: none;">
+          <div class="image-gallery">
+            <img src="유바바 1.jpg" alt="이미지 1">
+            <img src="유바바 2.jpg" alt="이미지 2">
+            <img src="유바바 3.jpg" alt="이미지 3">
+            <img src="유바바 4.jpg" alt="이미지 4">
+          </div>
+          <div class="video-section">
+            <h3><p>캐릭터 영상</p></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nqAxRJhUT3k?si=iB3auiq6o0Vj1O5Q" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <button class="close-content" onclick="hideMoreContent()">닫기</button>
+        </div>
+      </div>
+      <!--다른 캐릭터 보기-->
+      <div class="champion-section">
+        <h2><p>다른 등장인물 보기</p></h2>
+        <div class="champion-cards">
+            <!-- 첫 번째 카드 -->
+            <div class="champion-card">
+                <a href="https://example.com/character1" target="_blank">
+                    <img src="제니바.png" alt="제니바">
+                    <div class="character-details">
+                        <div class="character-name">제니바</div>
+                        <div class="character-role">센과 치히로의 행방불명</div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- 두 번째 카드 -->
+            <div class="champion-card">
+                <a href="https://example.com/character2" target="_blank">
+                    <img src="가마 할아범.png" alt="가마 할아범">
+                    <div class="character-details">
+                        <div class="character-name">가마 할아범
+                        </div>
+                        <div class="character-role">센과 치히로의 행방불명</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 다른 영화-->
+    <h2><p>다른 영화 보기</p></h2>
+    <div class="coverflow-section">
+        <div class="coverflow">
+            <div class="coverflow-item" style="background-image: url('토토로 2.gif');" data-link="https://hyunjin0101.github.io/totoro-poster/">
+            </div>
+            <div class="coverflow-item" style="background-image: url('고양이의 보은.gif');" data-link="https://hyunjin0101.github.io/cat-poster/">
+            </div>
+            <div class="coverflow-item" style="background-image: url('움직이는 성 1.gif');" data-link="https://hyunjin0101.github.io/haul-poster/">
+            </div>
+            <div class="coverflow-item" style="background-image: url('센과 치히로 4.gif');" data-link="https://hyunjin0101.github.io/sen-poster/">
+            </div>
+            <div class="coverflow-item" style="background-image: url('포뇨 2.gif');" data-link="https://hyunjin0101.github.io/ponyo-poster/">
+            </div>
+            <div class="coverflow-item" style="background-image: url('천공의 성.gif');" data-link="https://hyunjin0101.github.io/laputa-poster/">
+            </div>
+        </div>
+    </div>
+ <!-- 로고 -->
+    <div class="logo-Section">
+      <div class="logo-Box">
+      
+          <a href="https://www.imdb.com/title/tt0347618/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_cat%2520r">
+              <img src="IMDB.png" alt="IMDB" class="img1"><!-- <h4 style="color:brown;">공식 홈페이지</h4> -->
+          </a>
+          
+          <a href="https://www.youtube.com/@Ghibli-Museum">
+              <img src="YOUTUBE.png" alt="Youtube" class="img1"><!-- <h4 style="color:brown;">지브리 X</h4> -->
+          </a>
+          
+          <a href="https://x.com/GhibliML">
+              <img src="X.png" alt="X" class="img1"><!-- <h4 style="color:brown;">지브리 나무위키</h4> -->
+          </a>
+          
+          <br>
+
+          <a href="https://www.ghibli.jp/">
+              <img src="지브리.png" alt="지브리-나무위키" class="img2"><!-- <h4 style="color:brown;">지브리 나무위키</h4> -->
+          </a>
+
+      </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

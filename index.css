@@ -1,0 +1,540 @@
+
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'establishRetrosansOTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 상단 우측에 고정된 메뉴 */
+.top-right-menu {
+    position: fixed; /* 화면에 고정 */
+    top: 20px;       /* 상단 여백 */
+    right: 20px;     /* 우측 여백 */
+    z-index: 100;    /* GIF보다 위에 위치 */
+    text-align: center;
+}
+
+#main-button {
+    background-color: #6abf69; /* 자연 친화적인 초록색 */
+    color: white;
+    border: 2px solid #4e7a4f; /* 어두운 테두리 */
+    padding: 10px 20px;
+    border-radius: 15px; /* 버튼 둥글게 */
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 부드러운 그림자 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#main-button:hover {
+    background-color: #4e7a4f; /* 마우스 오버 시 어두운 초록색 */
+    color: #f2f2f2; /* 텍스트 밝게 */
+}
+
+#dropdown-menu {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95); /* 반투명 흰색 배경 */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* 드롭다운 그림자 */
+}
+
+.submenu-button {
+    background-color: #f9f7d9; /* 따뜻한 노란색 */
+    color: #5d4037; /* Ghibli의 차분한 갈색 */
+    border: 2px solid #d4b483; /* 테두리 색상 */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+display: none;
+}
+
+.submenu-button:hover {
+    background-color: #d4b483; /* 마우스 오버 시 더 밝은 갈색 */
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-header {
+    position: relative;
+    width: 100% ;
+    max-width: 1200px;
+    height: 720px;
+}
+
+.charater-content{
+    display: flex;
+    width: 100%;
+}
+.character-image-container {
+    position: relative;
+    height: 580px;
+    
+}
+.character-image {
+    /* width: 1200px;
+    height: 580px; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    
+}
+
+.character-title {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* 반투명 배경 */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-top: 4px solid #444; /* 상단 경계선 */
+}
+
+.character-title h1 {
+    font-size: 3rem;
+    font-family: 'LeeSeoyun';
+    margin: 0;
+    font-weight: bold;
+}
+
+.character-title h2 {
+    font-size: 1.5rem;
+    font-family: 'LeeSeoyun';
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.divider {
+    width: 60%;
+    height: 1px;
+    margin: 20px auto;
+    background-color: #555;
+}
+
+p {
+    font-family: 'LeeSeoyun';
+    text-decoration-line: none;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.quote-section {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.quote-section p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.quote-author {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #aaa;
+
+}
+/*중간 이미지*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* 전체 컨테이너 */
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* 캐릭터 이미지 */
+.mid-character-image img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 2px solid #ffffff;
+margin-bottom: 20px;
+}
+
+/* 설명 */
+.description {
+background-color: #1a1a1a;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.description h2 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.description p {
+font-size: 16px;
+line-height: 1.6;
+color: #cccccc;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+background-color: #101010;
+color: #ffffff;
+text-align: center;
+    }
+
+/* 전체 컨테이너 */
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* 버튼 스타일 */
+.more-info {
+background-color: #444444;
+color: #ffffff;
+border: none;
+padding: 10px 20px;
+margin: 0 auto;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+/* text-align: center; */
+}
+
+.more-info:hover {
+background-color: #666666;
+}
+
+    .close-content {
+        background-color: #ff4444;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: block;
+        margin: 20px auto 0;    /* 중앙 정렬*/
+    }
+
+    .close-content:hover {
+        background-color: #ff6666;
+        }
+
+/* 숨겨진 콘텐츠 */
+#additional-content {
+margin-top: 30px;
+}
+
+/* 이미지 갤러리 */
+.image-gallery {
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.image-gallery img {
+width: 150px;
+height: 150px;
+border-radius: 10px;
+border: 1px solid #ffffff;
+}
+
+/* 비디오 섹션 */
+.video-section h3 {
+margin-bottom: 10px;
+}
+
+.video-section iframe {
+width: 100%;
+max-width: 560px;
+height: 315px;
+border-radius: 10px;
+border: none;
+}
+/* 다른 챔피언 섹션 */
+.champion-section {
+background-color: #101010;
+padding: 20px;
+text-align: center;
+}
+
+.champion-section h3 {
+color: #ffffff;
+margin-bottom: 20px;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+
+.champion-cards {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.champion-card {
+background-color: #1a1a1a;
+width: 400px;
+height: 300px;
+position: relative;
+border-radius: 10px;
+overflow: hidden;
+text-align: center;
+align-items: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 기본 그림자 */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* 부드러운 애니메이션 */
+cursor: pointer; /* 클릭 가능 표시 */
+
+}
+
+.champion-card img {
+width: 400px;
+height: 200px;
+object-fit: cover;
+display: block;
+transition: transform 0.3s ease; /* 이미지 확대 애니메이션 */
+}
+
+.champion-info {
+position: absolute;
+bottom: 0;
+width: 100%;
+background: rgba(0, 0, 0, 0.7);
+padding: 10px 0;
+text-align: center;
+color: #ffffff;
+}
+
+.champion-info p {
+margin: 0;
+font-size: 18px;
+font-weight: bold;
+}
+
+.champion-info span {
+font-size: 14px;
+color: #bbbbbb;
+}
+
+.character-card:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+    .character-details {
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+        /* 하단 카드 텍스트 */
+        .character-details2 {
+            text-align: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+    .character-name {
+    font-size: 1.2rem; /* 크기 조정 */
+    font-weight: bold;
+    color: #ffffff; /* 흰색 텍스트 */
+    font-family: 'LeeSeoyun'; /* 깔끔한 폰트 */
+    margin: 5px 0;
+    }
+
+        /* 하단 카드 텍스트 크기 */
+        .character-name2 {
+            font-size: 1.8rem; /* 크기 조정 */
+            font-weight: bold;
+            color: #ffffff; /* 흰색 텍스트 */
+            font-family: 'LeeSeoyun'; /* 깔끔한 폰트 */
+            margin: 5px 0;
+        }
+
+    .character-role {
+    font-size: 1rem; /* 조금 작은 크기 */
+    color: #cccccc; /* 밝은 회색 텍스트 */
+    font-family: 'LeeSeoyun'; /* 동일한 폰트 */
+    }
+
+/* 마우스를 이미지에 올렸을 때 효과 */
+.character-card:hover img {
+transform: scale(1.1); /* 이미지 확대 */
+}
+
+.coverflow-section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color:#101010;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    min-width: 1000px;
+}
+
+.coverflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* 3D 효과를 위한 원근법 */
+    gap: 10px; /* 아이템 간 간격 */
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.coverflow-item {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    flex: 0 0 auto; /* 고정된 너비 유지 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform-origin: center center; /* 회전 축 */
+    object-fit:contain;
+}
+
+.coverflow-item:nth-child(odd) {
+    border: 3px solid #d261ff;
+}
+
+.coverflow-item.active {
+    transform: scale(1.2) translateZ(100px); /* 가운데 강조 */
+    z-index: 2;
+    opacity: 1;
+}
+
+.coverflow-item.prev,
+.coverflow-item.next {
+    transform: scale(0.8) translateX(-120px) rotateY(30deg); /* 양옆 아이템 효과 */
+    opacity: 0.7;
+}
+
+.coverflow-item.prev {
+    transform: scale(0.8) translateX(-120px) rotateY(30deg); /* 왼쪽 */
+}
+
+.coverflow-item.next {
+    transform: scale(0.8) translateX(120px) rotateY(-30deg); /* 오른쪽 */
+}
+
+.coverflow-item.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100vw);
+}
+
+.coverflow-item {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    flex: 0 0 auto; /* 고정된 너비 유지 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform-origin: center center; /* 회전 축 */
+    pointer-events: none; /* 기본적으로 클릭 비활성화 */
+}
+
+.coverflow-item.active {
+    transform: scale(1.2) translateZ(100px); /* 가운데 강조 */
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto; /* 활성화된 아이템 클릭 가능 */
+}
+
+/* 로고 섹션 */
+    .logo-Section{
+        padding: 10px 0 0px;
+        border-color: #00000000;
+        border-radius: 10px;   
+        background-color: #141313;
+        max-width:800px;
+    }
+
+        /* 로고 박스 */
+        .logo-Box{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-items: center;
+        }
+
+        /* 지브리 홈페이지 로고 */
+        .img1{
+            margin-left: 5px;
+            margin-right: 5px;
+            width:35%  
+        }
+
+        /* 지브리 홈페이지 로고 */
+        .img2{
+            margin-left: 5px;
+            margin-right: 5px;
+            width:20%  
+        }
+
+        /* 로고 밑줄 제거 */
+        a {
+            display: inline-block;
+            text-decoration-line: none;
+            font-family: 'Garamond', 'Papyrus', sans-serif;
+        }
+
+        /* 로고 제목 스타일 */
+        .logo-text-style{
+            font-family: 'Garamond', 'Papyrus', sans-serif;
+        }
