@@ -16,7 +16,7 @@ function clickSubButton(buttonId) {
             window.location.href = "https://tngodj.github.io/Gibli_Fan_Page/"; // 버튼 0 클릭 시 이동할 URL
             break;
         case 1:
-            window.location.href = "https://hyunjin0101.github.io/totoro-poster/"; // 버튼 1 클릭 시 이동할 URL
+            window.location.href = "https://hyunjin0101.github.io/sen-poster/"; // 버튼 1 클릭 시 이동할 URL
             break;
         case 2:
             window.location.href = "https://tngodj.github.io/Gibli-WorldCup-Main/"; // 버튼 2 클릭 시 이동할 URL
